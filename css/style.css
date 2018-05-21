@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
+
+body {
+    background-image: url("../img/ryan-graybill-224452.jpg");
+    background-size: cover;
+    display:grid;
+    font-family: 'Spectral SC', serif;
+    justify-content: center;
+    font-size:16px;
+    color:palevioletred;
+    align-items: center;
+    height:100vh;
+    margin:0px;
+}
+
+nav {
+    position:fixed;
+    height:80px;
+    width:100vw;
+    background:gray;
+    
+    
+}
+
+nav ul {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:0;
+    margin:0;
+    list-style:none;
+    height:100%;
+}
+
+nav ul li a {
+    color:white;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    
+}
+
+nav ul li a:hover {
+    color:grey;
+    background-color:white;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+h1 {
+    font-size: 7em;
+}
+
+
+
+img {
+    position:fixed;
+    top:-10%;
+    left:30%;
+    width:70px;
+    animation: falling 8s 2s infinite linear;
+}
+
+.f2 {
+    left:10%;
+    animation: falling 12s infinite linear;
+}
+
+.f3 {
+    left:50%;
+    animation: falling 10s 3s infinite linear;
+}
+.f4 {
+    left:70%;
+    animation: falling 8s infinite linear;
+}
+.f5 {
+    left:40%;
+    animation: falling 7s 3s infinite linear;
+}
+
+.f6 {
+    left:90%;
+    animation: falling 9s 4s infinite linear;
+}
+@keyframes falling {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+    
+    from {top:-10%;}
+    to {top:100%;}
+
+}
+
+@media screen and (max-width:767px) {
+    body {
+        background:white;
+    }
+
+    img {
+        display:none;
+    }
+
+    nav {
+        bottom:0px;
+        left:0px;
+    }
+
+}
